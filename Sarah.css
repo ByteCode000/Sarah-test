@@ -1,0 +1,290 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2758
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 /* Reset and Basic Styles */\
+* \{\
+    margin: 0;\
+    padding: 0;\
+    box-sizing: border-box;\
+\}\
+\
+body \{\
+    font-family: 'Arial', sans-serif;\
+    color: #333;\
+    background-color: #1b1b1b;\
+\}\
+\
+/* Header */\
+header \{\
+    background-color: #111;\
+    color: #fff;\
+    padding: 1rem 0;\
+    position: fixed;\
+    width: 100%;\
+    top: 0;\
+    z-index: 1000;\
+    transition: background-color 0.3s;\
+\}\
+\
+.container \{\
+    width: 80%;\
+    margin: 0 auto;\
+    display: flex;\
+    justify-content: space-between;\
+    align-items: center;\
+\}\
+\
+.logo \{\
+    font-size: 1.5rem;\
+    font-weight: bold;\
+\}\
+\
+nav ul \{\
+    list-style: none;\
+    display: flex;\
+    gap: 1rem;\
+\}\
+\
+nav ul li a \{\
+    color: #fff;\
+    text-decoration: none;\
+    padding: 0.5rem 1rem;\
+    transition: background-color 0.3s;\
+\}\
+\
+nav ul li a:hover \{\
+    background-color: #444;\
+\}\
+\
+/* Hero Section */\
+.hero \{\
+    background: url('hero-bg.jpg') no-repeat center center/cover;\
+    height: 100vh;\
+    color: #fff;\
+    display: flex;\
+    align-items: center;\
+    justify-content: center;\
+    text-align: center;\
+    position: relative;\
+    overflow: hidden;\
+\}\
+\
+.hero::before \{\
+    content: '';\
+    position: absolute;\
+    top: 0;\
+    left: 0;\
+    width: 100%;\
+    height: 100%;\
+    background: rgba(0, 0, 0, 0.5);\
+\}\
+\
+.hero-content \{\
+    max-width: 600px;\
+    position: relative;\
+    z-index: 1;\
+    animation: fadeIn 2s ease-in-out;\
+\}\
+\
+.hero h1 \{\
+    font-size: 3rem;\
+    margin-bottom: 1rem;\
+\}\
+\
+.hero p \{\
+    font-size: 1.2rem;\
+    margin-bottom: 2rem;\
+\}\
+\
+.cta-button \{\
+    background-color: #1e90ff;\
+    color: #fff;\
+    padding: 1rem 2rem;\
+    text-decoration: none;\
+    border-radius: 5px;\
+    transition: background-color 0.3s;\
+\}\
+\
+.cta-button:hover \{\
+    background-color: #1c7ed6;\
+\}\
+\
+/* Sections */\
+section \{\
+    padding: 4rem 0;\
+    text-align: center;\
+    color: #fff;\
+\}\
+\
+section:nth-child(even) \{\
+    background-color: #222;\
+\}\
+\
+section:nth-child(odd) \{\
+    background-color: #1b1b1b;\
+\}\
+\
+h2 \{\
+    font-size: 2rem;\
+    margin-bottom: 1rem;\
+    position: relative;\
+    animation: slideInLeft 1s ease-in-out;\
+\}\
+\
+/* Services Section */\
+.services .service-item \{\
+    margin: 2rem 0;\
+    animation: zoomIn 1s ease-in-out;\
+\}\
+\
+/* Contact Form */\
+form \{\
+    display: flex;\
+    flex-direction: column;\
+\}\
+\
+label \{\
+    margin: 0.5rem 0;\
+\}\
+\
+input, textarea, button \{\
+    padding: 0.5rem;\
+    margin: 0.5rem 0;\
+    border: none;\
+    border-radius: 5px;\
+\}\
+\
+input, textarea \{\
+    background-color: #333;\
+    color: #fff;\
+\}\
+\
+button \{\
+    background-color: #1e90ff;\
+    color: #fff;\
+    cursor: pointer;\
+    transition: background-color 0.3s;\
+\}\
+\
+button:hover \{\
+    background-color: #1c7ed6;\
+\}\
+\
+/* Footer */\
+footer \{\
+    background-color: #111;\
+    color: #fff;\
+    text-align: center;\
+    padding: 1rem 0;\
+\}\
+\
+/* Animations */\
+@keyframes fadeIn \{\
+    from \{\
+        opacity: 0;\
+    \}\
+    to \{\
+        opacity: 1;\
+    \}\
+\}\
+\
+@keyframes slideInLeft \{\
+    from \{\
+        transform: translateX(-100%);\
+        opacity: 0;\
+    \}\
+    to \{\
+        transform: translateX(0);\
+        opacity: 1;\
+    \}\
+\}\
+\
+@keyframes zoomIn \{\
+    from \{\
+        transform: scale(0.5);\
+        opacity: 0;\
+    \}\
+    to \{\
+        transform: scale(1);\
+        opacity: 1;\
+    \}\
+\}\
+\
+/* Additional Styling for AI Feel */\
+section \{\
+    padding: 4rem 0;\
+    text-align: center;\
+    color: #fff;\
+\}\
+\
+h2::after \{\
+    content: '';\
+    display: block;\
+    width: 50px;\
+    height: 3px;\
+    background: #1e90ff;\
+    margin: 10px auto 20px;\
+\}\
+\
+.service-item \{\
+    background: rgba(255, 255, 255, 0.1);\
+    border-radius: 10px;\
+    padding: 20px;\
+    margin: 10px 0;\
+\}\
+\
+form \{\
+    background: rgba(255, 255, 255, 0.1);\
+    padding: 20px;\
+    border-radius: 10px;\
+\}\
+\
+input, textarea \{\
+    background: rgba(255, 255, 255, 0.2);\
+    color: #fff;\
+    border: 1px solid #1e90ff;\
+\}\
+\
+button \{\
+    background-color: #1e90ff;\
+    color: #fff;\
+    border: none;\
+    padding: 10px;\
+    border-radius: 5px;\
+    cursor: pointer;\
+    transition: background 0.3s;\
+\}\
+\
+button:hover \{\
+    background-color: #105fbc;\
+\}\
+\
+/* Chatbot styling */\
+#chatbot \{\
+    position: fixed;\
+    bottom: 20px;\
+    right: 20px;\
+    width: 60px;\
+    height: 60px;\
+    background-color: #1e90ff;\
+    border-radius: 50%;\
+    display: flex;\
+    justify-content: center;\
+    align-items: center;\
+    cursor: pointer;\
+    transition: all 0.3s;\
+\}\
+\
+#chatbot:hover \{\
+    background-color: #1c7ed6;\
+\}\
+\
+#chatbot i \{\
+    font-size: 24px;\
+    color: white;\
+\}\
+}
